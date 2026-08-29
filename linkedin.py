@@ -63,7 +63,7 @@ class LinkedInClient:
             if resp.status_code == 200:
                 print("✅ LinkedIn session valid")
             else:
-                print(f"⚠️  LinkedIn session may be expired (status {resp.status_code}) — update LINKEDIN_COOKIES in .env if requests fail")
+                print(f"⚠️  LinkedIn session may be expired (status {resp.status_code}) — update LINKEDIN_LI_AT in env vars if requests fail")
         except Exception as e:
             print(f"⚠️  Could not verify session: {e}")
 
